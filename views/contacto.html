@@ -1,0 +1,158 @@
+<!DOCTYPE html> <!-- etiqueta unica de tipo de documento -->
+<html> <!-- inicio de html -->
+<!-- cabeza de mi codigo -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BOUTIQUE ZTD Inicio Sitio - Tienda de Ropa y Calzados</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  
+</head>
+<!-- Cuerpo de mi codigo -->
+<body> 
+  <header>
+    <!--Inicio Menu  -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(245, 222, 192);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../imagen/logo.png" class="tamanioLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BOUTIQUE ZTD</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../views/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Indumentaria
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../views/remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item" href="../views/ropaInterior.html">Ropa Interior</a></li>
+                  <li><a class="dropdown-item" href="../views/pantalones.html">Pantalones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Calzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../views/ojotas.html">Ojotas</a></li>
+                  <li><a class="dropdown-item" href="../views/zapatos.html">Zapatos</a></li>
+                  <li><a class="dropdown-item" href="../views/zapatillas.html">Zapatillas</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav> <!-- Fin Menu -->
+  </header>
+      <h2> Formulario </h2>
+      <form id="formulario" action="./contacto.html">
+      
+      <article>
+        <div class="col ">
+          <h2 class="h5">Nombre</h2>
+          <input id="nombre"type="text" class="form-control" placeholder="" aria-label="First name">
+          <br>
+        </div>
+        <br>
+        <div class="col ">
+          <h2 class="h5">Apellido</h2>
+          <input id="apellido" type="text" class="form-control" placeholder="" aria-label="Last name">
+          <br>
+        </div>
+        <br>
+        <div class="col">
+          <h2 class="h5">Telefono</h2>
+          <input id="telefono" type="number" class="form-control" placeholder="" aria-label="Last name">
+          <br>
+        </div>
+        <br>
+        <div class="col">
+          <h2 class="h5">Email</h2>
+          <input id="email" type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="">
+          <br>
+        </div>
+      </article>
+    
+    <article class="tamanioMotivo">
+      <label for="motivo"><h2 class="h5">Motivo</h2></label>
+      <div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Reclamp
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Consulta
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+        <label class="form-check-label" for="exampleRadios3">
+          Otros
+        </label>
+      </div>
+    </div>
+     </article>
+
+     <article>
+      <label for="comentario"><h2 class="h5">Comentarios</h2></label>
+        <br>  
+          <textarea name="comentario"  cols="80" rows="10"></textarea>
+      </article>
+      <article>
+        <div>
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Acepto Terminos
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Acepto Terminos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </article>
+        </form>
+        <script src="../js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <footer class="footer h5"> &copy;2022 - Leandro Veliz </footer>
+</body>
+</html>

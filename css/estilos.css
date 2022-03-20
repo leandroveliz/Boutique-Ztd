@@ -1,0 +1,250 @@
+/**********RESETEO**********/
+* {
+    Margin:0;
+    padding:0;
+ }
+
+/*******************RESPONSIVE*******************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 480px) and (max-device-width: 720px) {
+    /* Styles */ }
+  
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width: 481px) {
+    /* Styles */ }
+  
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width: 480px) {
+    /* Styles */ }
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */ }
+  
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */ }
+  
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */ }
+  
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1224px) {
+    /* Styles */ }
+  
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1824px) {
+    /* Styles */ }
+  
+  /* iPhone 4 ----------- */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */ }
+/**********ESTILOS GENERALES**********/
+
+body {
+    background-image: url(../imagen/fondo.jpg);
+    
+}
+
+header{
+    position: static;
+    bottom: 0;
+    width: 100%; 
+    
+}
+
+img {
+    width: 320px;
+    height: 250px;
+}
+
+
+h2{
+    color: white;
+    background-color: #fa9482;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 550px;
+    text-align: center;
+    
+}
+
+h5{
+    color: #e2b67d;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 20px;
+    padding: 15px;
+    
+}
+
+
+
+footer{
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+    background-color:#f5dec0;
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+
+.colorH2{
+  color: white;
+  font-weight: bold;
+ }
+
+/**********CLASES**********/
+.div{
+    border-top: ridge rgb(228, 203, 171) ;
+    border-right: ridge rgb(245, 222, 192) ;
+    border-left: ridge rgb(245, 222, 192) ;
+    border-bottom: ridge rgb(245, 222, 192) ;
+    height: 300px;
+    width:330px;
+    margin: 60px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.divColor{
+  background-color: #fa9482;
+}
+
+.sinSubrayado{
+    list-style-type:none;
+    text-decoration: none;
+}
+.sinPunto{
+  list-style-type: none;
+}
+
+
+.textProducto{
+    text-align: center;
+}
+
+.tamanioMotivo{
+  width: 320px;
+  height: 150px;
+  background-color: rgb(245, 222, 192);
+  border-top: ridge rgb(228, 203, 171) ;
+  border-right: ridge rgb(245, 222, 192) ;
+  border-left: ridge rgb(245, 222, 192) ;
+  border-bottom: ridge rgb(245, 222, 192) ;
+  justify-content: space-evenly;
+}
+
+.tamanioImagen{
+    width: 285px;
+    height: 220px;
+    
+}
+
+.moverProducto{
+    display: flex;
+    flex-wrap: wrap; 
+   flex-direction: row; 
+   justify-content: space-evenly;
+}
+
+.tamanioH2{
+  width: 500px;
+}
+
+.tamanioCarrito{
+  background-color: rgb(245, 222, 192);
+  min-height:max-content;
+  min-width: min-content;
+  border-top: ridge rgb(228, 203, 171) ;
+  border-right: ridge rgb(245, 222, 192) ;
+  border-left: ridge rgb(245, 222, 192) ;
+  border-bottom: ridge rgb(245, 222, 192) ;
+}
+.tamanioResumen{
+  width: 300px;
+  height: 300px;
+  border-top: ridge rgb(228, 203, 171) ;
+  border-right: ridge rgb(245, 222, 192) ;
+  border-left: ridge rgb(245, 222, 192) ;
+  border-bottom: ridge rgb(245, 222, 192) ;
+}
+
+.tamanioLogo{
+  width: 200px;
+  height: 80px; 
+}
+
+.moverLogo{
+  display: flex;  flex-direction: row; 
+   justify-content: center;
+}
+
+.imgCarrito{
+  width: 50px;
+  height: 50px;
+}
+
+#carrito {
+  display: none;
+}
+
+.carrito1 {
+  float: right;
+  display: flex;
+  margin: 2% 4% 0% 0%;
+}
+
+
+
+#carrito a {
+  margin: 3% 1% 0% 1%;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  bottom: 100%;
+  z-index: 1;
+  border-top: ridge rgb(228, 203, 171);
+  border-right: ridge rgb(245, 222, 192);
+  border-left: ridge rgb(245, 222, 192);
+  border-bottom: ridge rgb(245, 222, 192); 
+  background-color:rgb(245, 222, 192);
+  padding: 20px;
+  height:max-content;
+  width: min-content;
+}
+
+
+
+.imgDom{
+  width: 40px;
+  height: 40px;
+}
+
+.moverCarrito{
+  justify-content: end;
+}
+
+
+
+
+
+ 

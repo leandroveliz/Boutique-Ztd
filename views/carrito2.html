@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- etiqueta unica de tipo de documento -->
+<html>
+<!-- inicio de html -->
+<!-- cabeza de mi codigo -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BOUTIQUE ZTD Inicio Sitio - Tienda de Ropa y Calzados</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
+</head>
+<!-- Cuerpo de mi codigo -->
+
+<body>
+  
+  <header>
+    <!--Inicio Menu  -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(245, 222, 192);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../imagen/logo.png" class="tamanioLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BOUTIQUE ZTD</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../views/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Indumentaria
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../views/remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item" href="../views/ropaInterior.html">Ropa Interior</a></li>
+                  <li><a class="dropdown-item" href="../views/pantalones.html">Pantalones</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Calzados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="../views/ojotas.html">Ojotas</a></li>
+                  <li><a class="dropdown-item" href="../views/zapatos.html">Zapatos</a></li>
+                  <li><a class="dropdown-item" href="../views/zapatillas.html">Zapatillas</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav> <!-- Fin Menu -->
+  </header>
+    <!---->
+    <article class="moverProducto">
+      <div class="tamanioCarrito">
+      <h2>Mi Carrito</h2>
+      <div id="carrito2">
+            <table id="lista-compra" class="table">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Imagen</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Precio</th>
+                                  <th scope="col">Cantidad</th>
+                                  <th scope="col">Sub Total</th>
+                                  
+                              </tr>
+
+                          </thead>
+                          <tbody>
+
+                          </tbody>
+                         
+
+                      </table>
+    </div>
+  </article>
+  <article class="moverProducto">
+    <div class="tamanioCarrito">
+      <h2 class="backP">Resumen del Pedido</h2>
+      <tr>
+        <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+        <th scope="col">
+            <p id="subtotal"></p>
+        </th>
+        <!-- <th scope="col"></th> -->
+    </tr>
+    <tr>
+        <th colspan="4" scope="col" class="text-right">IVA :</th>
+        <th scope="col">
+            <p id="iva"></p>
+        </th>
+        <!-- <th scope="col"></th> -->
+    </tr>
+    <tr>
+        <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+        <th scope="col">
+            <p id="total"></p>
+        </th>
+        <!-- <th scope="col"></th> -->
+    </tr>
+    <div class="row justify-content-between">
+      <div class="col-md-4 mb-2">
+          <a href="../index.html" class="btn btn-info btn-block">Seguir comprando</a>
+      </div>
+    </div>
+    </div>
+    
+    </article>
+    
+  
+  <script src="../js/main.js"></script>
+  <script src="../js/compra.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <footer class="footer h5"> &copy;2022 - Leandro Veliz </footer>
+</body>
+
+</html>
